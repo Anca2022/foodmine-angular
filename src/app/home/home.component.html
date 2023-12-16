@@ -1,4 +1,25 @@
 <app-search></app-search>
 <app-tags></app-tags>
 
-<p>home works!</p>
+<div class="container">
+    <ul>
+        <li *ngFor="let food of foods">
+            <a href="">
+                <img [src]="food.imageUrl" [alt]="food.name">
+                <div class="title">
+                    <span class="food-name">  {{food.name}}</span>
+                    <span class="favorite {{food.favorite?'':'not'}}" >❤</span>
+                </div>
+                <div class="details">
+                    <div class="origins">
+                        <span *ngFor="let origin of food.origins">{{origin}}</span>
+                    </div>
+                    <div class="cook-time">🕒 {{food.cookTime}}
+                    </div>
+                </div>
+                <div class="price">{{food.price | currency}}</div>
+            </a>    
+            
+        </li>
+    </ul>
+</div>  

@@ -1,0 +1,14 @@
+.container{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a{
+        background-color: var(--lightgray);
+        color: blue;
+        padding: 0.3rem 1rem;
+        margin: 0.5rem 0.2rem;
+        border-radius: 3rem;
+        font-weight: 600;
+    }
+}
