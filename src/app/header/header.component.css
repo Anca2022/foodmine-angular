@@ -1,0 +1,20 @@
+.container {
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+}
+.container div {
+  padding: 1rem;
+}
+.container div a {
+  color: #af1313;
+}
+.container div .logo {
+  font-weight: 600;
+}
+.container div:hover {
+  background-color: var(--primary);
+}
+.container div:hover a {
+  color: white;
+}/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,21 @@
+.container{
+    border-bottom: 1px solid var(--primary);
+    display:flex;
+    justify-content: space-between;
+    div{
+        padding: 1rem;
+        a{ 
+            color:#af1313;
+        }
+        .logo{
+            font-weight:600;
+        }
+        &:hover{
+            background-color: var(--primary);
+            a{
+                color:white;
+            }
+        }
+    }
+}
+

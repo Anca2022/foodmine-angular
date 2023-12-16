@@ -1,0 +1,28 @@
+.container {
+  margin: 3rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.container input {
+  font-size: 1rem;
+  background-color: var(--lightgray);
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10rem 0 0 10rem;
+  width: 20rem;
+}
+.container button {
+  font-size: 1rem;
+  background-color: var(--primary);
+  opacity: 0.8;
+  color: white;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0 10rem 10rem 0;
+}
+.container button:hover {
+  opacity: 1;
+  cursor: pointer;
+}/*# sourceMappingURL=search.component.css.map */

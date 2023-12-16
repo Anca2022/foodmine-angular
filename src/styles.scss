@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+:root{
+    --primary: #e72929;
+    --lightgray:#f1f1f1;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+}
+
