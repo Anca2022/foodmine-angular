@@ -1,6 +1,7 @@
 <app-search></app-search>
 <app-tags></app-tags>
 
+<app-not-found *ngIf="foods.length <=0" messageDisplay="Food not found" messageRedirect="Reset Search"></app-not-found>
 <div class="container">
     <ul>
         <li *ngFor="let food of foods">

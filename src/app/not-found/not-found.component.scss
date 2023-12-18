@@ -1,0 +1,20 @@
+div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0.5rem;
+    p{
+        font-size: 26px;
+        margin-bottom:1.5rem;
+    }
+    button{
+        background-color: var(--primary);
+        color:white;
+        opacity:0.8;
+        padding:1rem 1.5rem;
+        border:none;
+        border-radius:10rem;
+        font-size:16px;
+        font-weight:300;
+    }
+}

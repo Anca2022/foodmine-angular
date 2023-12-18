@@ -1,3 +1,5 @@
+<app-not-found messageDisplay='Cart is empty' *ngIf="cart.items.length <= 0"></app-not-found>
+
 <div class="container" *ngIf='cart.items.length>0'>
     <ul class="cart">
         <li *ngFor="let item of cart.items">

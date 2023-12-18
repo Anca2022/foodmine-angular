@@ -1,4 +1,5 @@
-<div class="container">
+<app-not-found *ngIf="!food"></app-not-found>
+<div class="container" *ngIf="food">
     <img src="{{food.imageUrl}}" alt="{{food.name}}">
     <div class="details">
         <div class="title">
