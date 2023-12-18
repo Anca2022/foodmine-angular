@@ -1,1 +1,61 @@
-/*# sourceMappingURL=home.component.css.map */
+.container {
+  margin: 0.5rem;
+}
+.container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container ul li {
+  margin: 0.5rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.container ul li a {
+  color: black;
+}
+.container ul li a:hover {
+  opacity: 0.8;
+}
+.container ul li img {
+  width: 20rem;
+  height: 13.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container ul li .title {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container ul li .title .food-name {
+  color: var(--primary);
+}
+.container ul li .title .favorite {
+  color: red;
+}
+.container ul li .title .favorite.not {
+  color: gray;
+  font-size: 20px;
+}
+.container ul li .details {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.container ul li .details .origins span {
+  font-size: 12px;
+  background-color: var(--lightgray);
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.2rem;
+  border-radius: 0.8rem;
+}
+.container ul li .details .cook-time {
+  color: var(--primary);
+}
+.container ul li .price {
+  margin: 0.7rem 1rem 1.3rem 1rem;
+}/*# sourceMappingURL=home.component.css.map */

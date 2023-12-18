@@ -1,0 +1,85 @@
+.container{
+    display: flex;
+    flex-direction:row;
+    gap:3%;
+    flex-wrap:wrap;
+    margin: 2rem;
+    .cart{
+        flex: 3 0;
+        border: 1px solid #ffbbbb;
+        border-radius:1rem;
+        margin-bottom:1rem;
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            border-bottom: 1px solid #e4e4e4;
+            padding:1rem 1rem 1rem 2rem;
+            &:last-child{
+                border-bottom: none;
+            }
+            div:not(:first-child){
+                flex-basis:18%; 
+            }
+            img{
+                width: 5rem;
+                height: 5rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            a{
+                color: black;
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+            select{
+                border:none;
+                outline:none;
+                border-bottom:1px solid #e4e4e4;
+                font-size: 1.15rem;
+                font-weight:100;
+                width:3rem;
+            }
+            button{
+                padding: 0.5rem;
+                background-color: var(--lightgray);
+                color:var(--primary);
+                opacity:0.7;
+                border:none;
+                outline:none;
+                border-radius:1rem;
+                &:hover{
+                    opacity:1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .checkout{
+        flex:1 0;
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ffbbbb;
+        border-radius:1rem;
+        margin-bottom:1rem;
+        padding: 3rem 2rem;
+        font-size:1.4rem;
+        .count{
+            margin-bottom:2rem;
+        }
+       .count:before{
+        content:'Count: ';
+        color: gray;
+       }
+       .total-price:before{
+        content:'Price: ';
+        color:gray;
+       }
+    }
+}
+

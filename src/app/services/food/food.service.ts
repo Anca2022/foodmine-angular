@@ -9,12 +9,23 @@ export class FoodService {
 
   constructor() { }
 
-  //getFoodByTag()
+  getFoodById(id:number):Food{
+    return this.getAll().find(food=> food.id == id)!;
+  }
+
+
+  getFoodsByTag(tag:string):Food[]{
+    if (tag =='All') 
+      return this.getAll();
+    else return this.getAll().filter(food => food.tags?.includes(tag));
+  }
+
+  
 
   getFoodBySearchTerm(searchTerm:string):Food[]{
     let foods:Food[]=[];
     this.getAll().forEach(element => {
-      if (element.name.includes(searchTerm)) foods.push(element); 
+      if (element.name.toLowerCase().includes(searchTerm.toLowerCase())) foods.push(element); 
     })
     return foods;    
     //return this.getAll().filter(food => 

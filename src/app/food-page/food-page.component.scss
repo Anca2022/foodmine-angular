@@ -1,0 +1,85 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    img{
+        flex:1 0;
+        min-width:25rem;
+        max-width:33rem;
+        height:35rem;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+    .details{
+        flex:1 0;
+        margin-left:4rem;
+        .title{
+            font-size:2.1rem;
+            display:flex;
+            justify-content: space-between;
+            .name{
+                font-weight: 600;
+            }
+            .favorite{
+                color:red;
+                font-size:2.4rem; 
+            }
+            .favorite.not{
+                color:gray;
+                  
+            }
+        }
+        .origins{
+            margin:1rem 0 1.3rem 0;
+            span{
+                font-size: 18px;
+                background-color: aliceblue;
+                padding:0.3rem 0.5rem;
+                margin-right: 0.2rem;
+                border-radius:3rem;
+            }
+        }
+        .tags{
+            span{
+                background-color: var(--lightgray);
+                color:blue;
+                font-weight:600;
+                font-size:15px;
+                padding: 0.3rem 0.5rem;
+                border-radius:3rem;
+                margin-right: 0.3rem;
+            }
+        }
+        .cook-time{
+            margin-top: 1rem;
+            margin-bottom:1.8rem;
+            font-size:1.4rem;
+        }
+        .price{
+            color:green;
+            font-size:1.8rem;
+            margin-bottom:2rem;
+            &::before{
+                content:'Price: ';
+                color: gray;
+            }
+        }
+        button{
+            background-color: var(--primary);
+            color:white;
+            border:none;
+            outline:none;
+            border-radius: 10rem;
+            padding: 0.9rem 1rem;
+            font-size:1.2rem;
+            width:100%;
+            &:hover{
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+    }
+}

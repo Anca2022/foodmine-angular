@@ -1,1 +1,85 @@
-/*# sourceMappingURL=food-page.component.css.map */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+.container img {
+  flex: 1 0;
+  min-width: 25rem;
+  max-width: 33rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3rem;
+}
+.container .details {
+  flex: 1 0;
+  margin-left: 4rem;
+}
+.container .details .title {
+  font-size: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container .details .title .name {
+  font-weight: 600;
+}
+.container .details .title .favorite {
+  color: red;
+  font-size: 2.4rem;
+}
+.container .details .title .favorite.not {
+  color: gray;
+}
+.container .details .origins {
+  margin: 1rem 0 1.3rem 0;
+}
+.container .details .origins span {
+  font-size: 18px;
+  background-color: aliceblue;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.2rem;
+  border-radius: 3rem;
+}
+.container .details .tags span {
+  background-color: var(--lightgray);
+  color: blue;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3rem;
+  margin-right: 0.3rem;
+}
+.container .details .cook-time {
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+}
+.container .details .price {
+  color: green;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.container .details .price::before {
+  content: "Price: ";
+  color: gray;
+}
+.container .details button {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  padding: 0.9rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.container .details button a {
+  color: white;
+}
+.container .details button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}/*# sourceMappingURL=food-page.component.css.map */

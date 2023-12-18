@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"tags.component.css"}
+{"version":3,"sources":["tags.component.scss","tags.component.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,uBAAA;EACA,eAAA;ACCJ;ADAI;EACI,kCAAA;EACA,WAAA;EACA,oBAAA;EACA,qBAAA;EACA,mBAAA;EACA,gBAAA;ACER","file":"tags.component.css"}
