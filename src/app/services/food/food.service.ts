@@ -34,14 +34,13 @@ export class FoodService {
 
   getAllTags():Tag[]{
     return [
-      { name: 'All', count: 14 },
-      { name: 'FastFood', count: 4 },
-      { name: 'Pizza', count: 2 },
-      { name: 'Lunch', count: 3 },
+      { name: 'All', count: 6 },
+      { name: 'FastFood', count: 3 },
+      { name: 'Lunch', count: 4 },
       { name: 'SlowFood', count: 2 },
       { name: 'Hamburger', count: 1 },
-      { name: 'Fry', count: 1 },
-      { name: 'Soup', count: 1 },
+      { name: 'Fry', count: 2 },
+      { name: 'Vegetarian', count: 1 },
     ];
   }
 
@@ -49,18 +48,18 @@ export class FoodService {
     return [
       {
         id: 1,
-        name: 'Pizza Pepperoni',
+        name: 'Veggie Bowl',
         cookTime: '10-20',
         price: 10,
         favorite: false,
         origins: ['italy'],
         stars: 4.5,
         imageUrl: '/assets/images/foods/food-1.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['Vegetarian', 'Lunch'],
       },
       {
         id: 2,
-        name: 'Meatball',
+        name: 'Steak',
         price: 20,
         cookTime: '20-30',
         favorite: true,
@@ -82,7 +81,7 @@ export class FoodService {
       },
       {
         id: 4,
-        name: 'Fried Potatoes',
+        name: 'Loaded Fries',
         price: 2,
         cookTime: '15-20',
         favorite: true,
@@ -93,25 +92,25 @@ export class FoodService {
       },
       {
         id: 5,
-        name: 'Chicken Soup',
+        name: 'Chicken with Spinach',
         price: 11,
         cookTime: '40-50',
         favorite: false,
         origins: ['india', 'asia'],
         stars: 3.0,
         imageUrl: '/assets/images/foods/food-5.jpg',
-        tags: ['SlowFood', 'Soup'],
+        tags: ['SlowFood', 'Lunch'],
       },
       {
         id: 6,
-        name: 'Vegetables Pizza',
+        name: 'Fish and salad',
         price: 9,
         cookTime: '40-50',
         favorite: false,
         origins: ['italy'],
         stars: 4.0,
         imageUrl: '/assets/images/foods/food-6.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['FastFood', 'Fry', 'Lunch'],
       },
     ]
   } 
