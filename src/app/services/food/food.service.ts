@@ -28,8 +28,7 @@ export class FoodService {
       if (element.name.toLowerCase().includes(searchTerm.toLowerCase())) foods.push(element); 
     })
     return foods;    
-    //return this.getAll().filter(food => 
-    //food.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    
   }
 
   getAllTags():Tag[]{
